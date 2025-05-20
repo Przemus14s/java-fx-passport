@@ -73,6 +73,7 @@ public class Controller implements Initializable {
             if (radioBtnPiwne.isSelected()) color = "Kolor oczu - piwny";
             if (name.isEmpty() || surname.isEmpty()) {
                 Alert alert = new Alert(Alert.AlertType.INFORMATION, "Wprowadź dane!");
+                alert.setContentText(null);
                 alert.show();
             } else {
                 Alert alert = new Alert(Alert.AlertType.INFORMATION, name + " " + surname + " " + color);
